@@ -8,4 +8,4 @@
 #-keepclass cn/cxzheng/asmtraceman/MainActivity
 
 #插桩代码所在类,这里固定配置为：cn/cxzheng/tracemanui/TraceMan(Fixed configuration here: cn/cxzheng/tracemanui/TraceMan)
--beatclass cn/cxzheng/tracemanui/TraceMan
+-beatclass com/asm/code/TraceMan

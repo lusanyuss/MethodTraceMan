@@ -35,8 +35,8 @@ dependencies {
 //    debugImplementation 'com.github.zhengcx:MethodTraceMan:1.0.7'
 //    releaseImplementation 'com.github.zhengcx:MethodTraceMan:1.0.5-noop'
 
-    releaseImplementation project(':tracemanui-noop')
-    implementation project(':tracemanui')
+//    releaseImplementation project(':tracemanui-noop')
+//    implementation project(':tracemanui')
 
 }
 
