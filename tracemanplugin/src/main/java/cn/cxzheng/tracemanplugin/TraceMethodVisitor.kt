@@ -3,10 +3,6 @@ package cn.cxzheng.tracemanplugin
 import org.objectweb.asm.MethodVisitor
 import org.objectweb.asm.commons.AdviceAdapter
 
-/**
- * Create by cxzheng on 2019/6/4
- * Method Visitor
- */
 class TraceMethodVisitor(
     api: Int, mv: MethodVisitor?, access: Int,
     name: String?, desc: String?, className: String?,

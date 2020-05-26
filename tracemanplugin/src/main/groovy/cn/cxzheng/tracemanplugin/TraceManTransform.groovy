@@ -1,20 +1,13 @@
 package cn.cxzheng.tracemanplugin
 
-import com.android.build.api.transform.DirectoryInput
-import com.android.build.api.transform.Format
-import com.android.build.api.transform.JarInput
-import com.android.build.api.transform.QualifiedContent
-import com.android.build.api.transform.Transform
-import com.android.build.api.transform.TransformException
-import com.android.build.api.transform.TransformInput
-import com.android.build.api.transform.TransformInvocation
-import com.android.build.api.transform.TransformOutputProvider
+import cn.cxzheng.tracemanplugin.Config
+import cn.cxzheng.tracemanplugin.TraceClassVisitor
+import com.android.build.api.transform.*
 import com.android.build.gradle.internal.pipeline.TransformManager
 import org.apache.commons.codec.digest.DigestUtils
 import org.apache.commons.io.FileUtils
 import org.apache.commons.io.IOUtils
 import org.gradle.api.Project
-import cn.cxzheng.tracemanplugin.Config
 import org.objectweb.asm.ClassReader
 import org.objectweb.asm.ClassVisitor
 import org.objectweb.asm.ClassWriter
@@ -24,7 +17,6 @@ import java.util.jar.JarEntry
 import java.util.jar.JarFile
 import java.util.jar.JarOutputStream
 import java.util.zip.ZipEntry
-import cn.cxzheng.tracemanplugin.TraceClassVisitor
 
 import static org.objectweb.asm.ClassReader.EXPAND_FRAMES
 

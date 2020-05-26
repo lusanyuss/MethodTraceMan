@@ -4,9 +4,6 @@ import java.io.*
 import java.util.ArrayList
 import java.util.zip.ZipFile
 
-/**
- * Create by cxzheng on 2019/6/4
- */
 class Utils {
 
     companion object {

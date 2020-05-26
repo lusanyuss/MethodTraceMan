@@ -2,9 +2,6 @@ package cn.cxzheng.tracemanplugin
 
 import org.objectweb.asm.Opcodes
 
-/**
- * Create by cxzheng on 2019/6/4
- */
 class TraceMethod {
 
     private var id: Int = 0

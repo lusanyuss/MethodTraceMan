@@ -1,8 +1,5 @@
 package cn.cxzheng.tracemanplugin
 
-/**
- * Create by cxzheng on 2019/8/28
- */
 class MethodFilter {
 
     companion object {

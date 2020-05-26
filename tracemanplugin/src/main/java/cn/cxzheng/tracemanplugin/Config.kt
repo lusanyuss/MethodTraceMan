@@ -4,9 +4,6 @@ import java.io.File
 import java.io.FileNotFoundException
 import java.util.HashSet
 
-/**
- * Create by cxzheng on 2019/6/4
- */
 class Config {
 
     //一些默认无需插桩的类

@@ -4,6 +4,7 @@ import android.os.Build;
 import android.os.Looper;
 import android.os.Trace;
 import android.support.annotation.RequiresApi;
+import android.util.Log;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -24,6 +25,7 @@ public class TraceMan {
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
     public static void start(String name) {
 //        if (isOpenTraceMethod()) {
+        Log.v("TraceMan",name+"-start");
         Trace.beginSection(name);
         synchronized (methodList) {
             methodList.add(new Entity(name, System.currentTimeMillis(), true, isInMainThread()));
@@ -34,6 +36,7 @@ public class TraceMan {
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
     public static void end(String name) {
 //        if (isOpenTraceMethod()) {
+        Log.v("TraceMan",name+"-end");
         Trace.endSection();
         synchronized (methodList) {
             methodList.add(new Entity(name, System.currentTimeMillis(), false, isInMainThread()));

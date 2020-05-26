@@ -1,14 +1,9 @@
 package cn.cxzheng.tracemanplugin
 
-import com.android.tools.build.jetifier.core.utils.Log
 import org.objectweb.asm.ClassVisitor
 import org.objectweb.asm.MethodVisitor
 import org.objectweb.asm.Opcodes
 
-/**
- * Create by cxzheng on 2019/6/4
- * Class Visitor
- */
 class TraceClassVisitor(api: Int, cv: ClassVisitor?, var traceConfig: Config) :
     ClassVisitor(api, cv) {
 
