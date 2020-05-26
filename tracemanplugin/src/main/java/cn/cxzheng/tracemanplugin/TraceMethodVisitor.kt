@@ -1,6 +1,5 @@
 package cn.cxzheng.tracemanplugin
 
-import com.android.tools.build.jetifier.core.utils.Log
 import org.objectweb.asm.MethodVisitor
 import org.objectweb.asm.commons.AdviceAdapter
 
@@ -15,7 +14,7 @@ class TraceMethodVisitor(
 ) : AdviceAdapter(api, mv, access, name, desc) {
 
     private var methodName: String? = null
-    private var name: String? = null
+    private var mName: String? = null
     private var className: String? = null
     private val maxSectionNameLength = 127
 
@@ -24,7 +23,7 @@ class TraceMethodVisitor(
         val traceMethod = TraceMethod.create(0, access, className, name, desc)
         this.methodName = traceMethod.getMethodNameText()
         this.className = className
-        this.name = name
+        this.mName = name
 
     }
 
